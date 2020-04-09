@@ -1,0 +1,15 @@
+<div id="lx-aside" style="background-image: url(<%- url_for(theme.cover)%>)">
+  <div class="overlay">
+  <div class="featured">
+    <div class="avatar"><a href="<%- config.root%>"><img src="<%- url_for(theme.avatar)%>"></a></div>
+    <span><%- config.author%></span>
+    <h1><%- config.title%></h1>
+    <%if(config.subtitle.length) {%><span>——<%- config.subtitle%></span><%}%>
+    <%if (theme.social.enable) { %><%- partial('sociallinks')%><%}%>
+	<span id="busuanzi_container_site_uv"> 
+		访客数<span id="busuanzi_value_site_uv"></span>人次
+	</span>
+	<span id="busuanzi_container_site_pv">阅读量<span id="busuanzi_value_site_pv"></span>次</span>
+  </div>
+  </div>
+</div>
